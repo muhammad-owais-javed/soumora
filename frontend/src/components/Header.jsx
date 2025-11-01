@@ -27,7 +27,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Code size={32} color="#6366f1" />
-          <span className="logo-text">WebSolutions</span>
+          <span className="logo-text">Soumora</span>
         </div>
         
         <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
