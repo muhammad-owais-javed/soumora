@@ -12,12 +12,12 @@
 
 .header.scrolled {
   background-color: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.625rem); 
+  box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1); 
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: 75rem; 
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
@@ -49,22 +49,22 @@
 }
 
 .nav-links a:hover {
-  color: #6366f1;
+  color: var(--primary-color);
 }
 
 .mobile-menu-btn {
-  display: none; /* Hidden by default */
+  display: none;
   background: none;
   border: none;
   color: #ffffff;
   cursor: pointer;
-  z-index: 1100; /* Ensure it's above the nav */
+  z-index: 1100;
 }
 
 /* Responsive styles for mobile */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   .nav-links {
-    display: none; /* Hide desktop nav */
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@
   }
 
   .nav-links.mobile-open {
-    display: flex; /* Show mobile nav when open */
+    display: flex;
   }
 
   .nav-links a {
@@ -86,6 +86,6 @@
   }
 
   .mobile-menu-btn {
-    display: block; /* Show the hamburger button */
+    display: block;
   }
 }
