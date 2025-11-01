@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Services from './components/Services';
 import About from './components/About';
+import Contact from './components/Contact';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -17,6 +18,7 @@ function App() {
         <Home />
         <Services />
         <About />
+        <Contact />
 
       </div>
 
