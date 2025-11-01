@@ -1,0 +1,39 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: var(--dark-bg);
+  padding: 3rem 0;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.footer-text {
+  color: #94a3b8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* 768px */
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    text-align: center;
+  }
+}
