@@ -137,8 +137,8 @@ const Home = () => {
           {/* Subtitle */}
           <p className="hero-subtitle">
             We are dedicated to elevate your business by combining strategic design with reliable solutions 
-            to drive real results. We move beyond building simple digital assets to craft the defining experiences
-            for your brand's future.
+            to drive real results. Our offerings range from expert IT consultancy to comprehensive services and product solutions.
+            We move beyond building simple digital assets to craft the defining experiences for your brand's future.
           </p>
           
           {/* Stats 
@@ -162,7 +162,7 @@ const Home = () => {
           {/* CTA Buttons */}
           <div className="hero-buttons">
             <button className="hero-btn-primary" onClick={() => scrollToSection('contact')}>
-              <span>Start Your Project</span>
+              <span>Start Your Project!</span>
               <ArrowRight className="btn-icon" size={20} />
             </button>
             <button className="hero-btn-secondary" onClick={() => scrollToSection('services')}>
@@ -173,7 +173,7 @@ const Home = () => {
 
           {/* Trust Badges */}
           <div className="trust-badges">
-            <span className="trust-text">Trusted by industry leaders</span>
+            <span className="trust-text">The Technology Partner for Emerging Leaders</span>
             <div className="trust-icons">
               <div className="trust-icon">
                 <Zap size={20} />
@@ -207,8 +207,8 @@ const Home = () => {
                 <Zap size={24} />
               </div>
               <div className="element-text">
-                <div className="element-title">Lightning Fast</div>
-                <div className="element-desc">Optimized Performance</div>
+                <div className="element-title">Consultancy</div>
+                <div className="element-desc">Digital Transformation</div>
               </div>
             </div>
 
@@ -217,8 +217,8 @@ const Home = () => {
                 <Globe size={24} />
               </div>
               <div className="element-text">
-                <div className="element-title">Global Reach</div>
-                <div className="element-desc">Worldwide Solutions</div>
+                <div className="element-title">Migration Services</div>
+                <div className="element-desc">Web Hosting Migration</div>
               </div>
             </div>
 
@@ -227,8 +227,18 @@ const Home = () => {
                 <Sparkles size={24} />
               </div>
               <div className="element-text">
-                <div className="element-title">Innovation</div>
-                <div className="element-desc">Cutting-Edge Tech</div>
+                <div className="element-title">Cybersecurity</div>
+                <div className="element-desc">Data Protection and Compliance</div>
+              </div>
+            </div>
+
+            <div className="floating-element element-4">
+              <div className="element-icon">
+                <Sparkles size={24} />
+              </div>
+              <div className="element-text">
+                <div className="element-title">Application Development</div>
+                <div className="element-desc">Custom Web Solutions</div>
               </div>
             </div>
 

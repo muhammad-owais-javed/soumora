@@ -425,6 +425,12 @@
   animation: float 7s ease-in-out infinite 2s;
 }
 
+.element-4 {
+  top: -5%;
+  left: -5%;
+  animation: float 7s ease-in-out infinite 2s;
+}
+
 /* Decorative Shapes */
 .deco-shape {
   position: absolute;
