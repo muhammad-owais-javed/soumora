@@ -16,6 +16,7 @@ import {
   Globe2,
   Lightbulb
 } from 'lucide-react';
+import logo from '../assets/logo.png';
 import './About.css';
 
 const About = () => {
@@ -88,14 +89,14 @@ const About = () => {
     },
     {
       icon: Lightbulb,
-      title: 'Innovation',
-      desc: 'Pushing boundaries with cutting-edge solutions.',
+      title: 'Creative',
+      desc: 'Building solutions tailored to your unique challenges.',
       color: '#f59e0b'
     },
     {
       icon: Award,
       title: 'Excellence',
-      desc: 'Delivering quality that exceeds expectations.',
+      desc: 'Delivering quality to make long term relationships.',
       color: '#3b82f6'
     },
     {
@@ -105,20 +106,20 @@ const About = () => {
       color: '#8b5cf6'
     }
   ];
-
+/*
   const milestones = [
     { year: '2015', title: 'Company Founded', desc: 'Started with a vision to transform digital experiences' },
     { year: '2017', title: 'First Major Client', desc: 'Landed enterprise partnership, scaling our operations' },
     { year: '2019', title: 'Global Expansion', desc: 'Opened offices in 5 countries worldwide' },
     { year: '2022', title: 'Innovation Award', desc: 'Recognized for groundbreaking tech solutions' },
     { year: '2025', title: 'Industry Leader', desc: 'Serving 500+ clients across 30+ countries' }
-  ];
+  ]; */
 
   const benefits = [
     { icon: TrendingUp, title: 'Career Growth', desc: 'Continuous learning and development opportunities' },
     { icon: Globe2, title: 'Remote-First', desc: 'Work from anywhere with flexible schedules' },
     { icon: Heart, title: 'Health & Wellness', desc: 'Comprehensive health coverage and wellness programs' },
-    { icon: Zap, title: 'Cutting-Edge Tech', desc: 'Work with the latest tools and technologies' }
+ /*   { icon: Zap, title: 'Relocation Assistance', desc: 'We provide assistance in relocation if required' }*/
   ];
 
   return (
@@ -136,15 +137,15 @@ const About = () => {
         <div className={`about-header ${isVisible ? 'visible' : ''}`}>
           <div className="section-badge">
             <Sparkles size={16} />
-            <span>About Soumora</span>
+            <span>About Suomora</span>
           </div>
           <h2 className="section-title">
-            Building the Future of
-            <span className="title-highlight"> Digital Innovation</span>
+            Contributing in the Future of
+            <span className="title-highlight"> Digital World</span>
           </h2>
           <p className="section-description">
-            We're not just developers—we're digital architects crafting experiences 
-            that inspire, engage, and transform businesses worldwide.
+            We are not just developers. We are digital architects crafting experiences 
+            and providing services that inspire, engage, and transform businesses worldwide.
           </p>
         </div>
 
@@ -176,15 +177,13 @@ const About = () => {
                 <div className="story-hero-content">
                   <h3 className="story-title">A Journey of Innovation</h3>
                   <p className="story-text">
-                    Founded in 2015, Soumora began with a simple yet powerful vision: to bridge 
-                    the gap between technology and human experience. What started as a small team 
-                    of passionate developers has grown into a global force driving digital 
-                    transformation for hundreds of businesses worldwide.
+                    Founded in 2025, Suomora began with a simple vision: to bridge 
+                    the gap between technology and human experience. We committed to 
+                    make IT services easy and accessible for businesses of all sizes.
                   </p>
                   <p className="story-text">
-                    Today, we're proud to be at the forefront of innovation, combining creative 
-                    excellence with technical expertise to deliver solutions that don't just meet 
-                    expectations—they exceed them.
+                    Today, we're combining creative excellence with technical expertise to 
+                    deliver IT services and solutions that meet the expectation and help in your business growth.
                   </p>
                   <button className="story-video-btn">
                     <div className="video-play-icon">
@@ -196,7 +195,7 @@ const About = () => {
                 <div className="story-hero-visual">
                   <div className="visual-card card-main">
                     <img 
-                      src="/api/placeholder/400/300" 
+                      src={logo}
                       alt="Team" 
                       className="visual-img"
                     />
@@ -209,8 +208,8 @@ const About = () => {
                       <Users size={20} />
                     </div>
                     <div>
-                      <div className="stat-number">500+</div>
-                      <div className="stat-label">Happy Clients</div>
+                      <div className="stat-number">98%</div>
+                      <div className="stat-label">Customer Satisfaction</div>
                     </div>
                   </div>
                   <div className="floating-stat stat-2">
@@ -218,15 +217,15 @@ const About = () => {
                       <Award size={20} />
                     </div>
                     <div>
-                      <div className="stat-number">50+</div>
-                      <div className="stat-label">Awards Won</div>
+                      <div className="stat-number">2025</div>
+                      <div className="stat-label">Founded in</div>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Stats Counter */}
-              <div className="stats-section">
+    {/*          <div className="stats-section">
                 <div className="stat-card">
                   <div className="stat-value">{counters.years}+</div>
                   <div className="stat-text">Years of Excellence</div>
@@ -243,7 +242,7 @@ const About = () => {
                   <div className="stat-value">{counters.satisfaction}%</div>
                   <div className="stat-text">Client Satisfaction</div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Values */}
               <div className="values-section">
@@ -268,7 +267,7 @@ const About = () => {
               </div>
 
               {/* Timeline */}
-              <div className="timeline-section">
+         {/*     <div className="timeline-section">
                 <h3 className="subsection-title">Our Journey</h3>
                 <div className="timeline">
                   {milestones.map((milestone, index) => (
@@ -285,9 +284,9 @@ const About = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
-          )}
+              </div> */}
+            </div> 
+          )} 
 
           {/* Careers Tab */}
           {activeTab === 'careers' && (
@@ -297,7 +296,7 @@ const About = () => {
                 <div className="careers-hero-visual">
                   <div className="visual-card card-main">
                     <img 
-                      src="/api/placeholder/400/300" 
+                      src={logo} 
                       alt="Team Working" 
                       className="visual-img"
                     />
@@ -317,7 +316,7 @@ const About = () => {
                 <div className="careers-hero-content">
                   <h3 className="careers-title">Join Our Team</h3>
                   <p className="careers-text">
-                    At Soumora, we believe that great work comes from great people. We're 
+                    At Suomora, we believe that great work comes from great people. We're 
                     building a diverse, inclusive team of talented individuals who are 
                     passionate about technology and driven to make a difference.
                   </p>
@@ -348,7 +347,7 @@ const About = () => {
               </div>
 
               {/* Open Positions */}
-              <div className="positions-section">
+      {/*        <div className="positions-section">
                 <h3 className="subsection-title">Open Positions</h3>
                 <div className="positions-list">
                   <div className="position-item">
@@ -400,8 +399,8 @@ const About = () => {
                     <span>Send General Application</span>
                     <ArrowRight size={20} />
                   </button>
-                </div>
-              </div>
+                </div> 
+              </div>*/}
             </div>
           )}
         </div>
